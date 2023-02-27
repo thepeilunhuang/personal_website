@@ -16,8 +16,10 @@ h1{
 nav {
     text-align: center;
 }
+
 li{
     list-style-type: none;
+    display: inline;
 }
 a{
     text-decoration: none;
