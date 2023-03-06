@@ -19,7 +19,6 @@ nav {
 
 li{
     list-style-type: none;
-    display: inline;
 }
 a{
     text-decoration: none;
@@ -28,7 +27,7 @@ a{
 .main_section{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-row: 1fr 5fr 2fr;
+    grid-template-rows: 1fr 5fr 2fr;
 }
 h2{
     grid-row: 1/2;
@@ -54,4 +53,36 @@ img{
 footer{
     text-align: center;
     background-color: lightslategray;
+}
+
+.break_line{
+    background-color: #003c71;
+    width: 93vw;
+    height: 2px;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 600px){
+    li{
+        display: inline;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .course_title{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .term{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .description{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+
 }
